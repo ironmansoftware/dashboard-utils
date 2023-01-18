@@ -1,6 +1,6 @@
 {
     "description": "Utilities for PowerShell Universal dashboard.",
-    "name": "Universal Dasboard Utilities",
-    "version": "1.0.2",
+    "name": "Universal Dashboard Utilities",
+    "version": "1.0.3",
     "variables": []
 }
