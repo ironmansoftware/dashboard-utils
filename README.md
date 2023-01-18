@@ -1,4 +1,4 @@
-# Dashoard Utilities
+# Dashboard Utilities
 
 Utility functions for PowerShell Universal Dashboard
 
