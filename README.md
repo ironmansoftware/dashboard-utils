@@ -1,13 +1,19 @@
-![](./ims-logo.png)
+# Dashoard Utilities
 
-# PowerShell Universal Template
+Utility functions for PowerShell Universal Dashboard
 
-This repository is used for creating PowerShell Universal Templates. You can create a new repository based on this one to publish your own templates.
+## Show-UDEventData
 
-## Creating a Template
+Shows the `$EventData` variable in a modal as JSON.
 
-First, create a new repository based on this template. Clone the repository locally and add your files to it. Add your files from `C:\ProgramData\UniversalAutomation\Repository` to the repository. Update the manifest and with the name, description and version of your template. Push the changes to GitHub. Once you're satisfied with the template, you can publish to our website.
+## Reset-UDPage
 
-## Publishing a Template
+Reloads the current page.
 
-Login to [Ironman Software](https://ironmansoftware.com/account) and generate a template token. In GitHub, navigate to Settings \ Secrets and Variables and click Actions. Create a new secret named `TOKEN` with the value of your token. Run the Publish GitHub action.
+## Show-UDObject
+
+Shows an object in a modal in a table.
+
+## Get-UDCache
+
+Returns the current values in the `$Cache` scope.
