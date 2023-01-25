@@ -12,7 +12,7 @@
     RootModule        = 'DashboardUtils.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '1.1.0'
+    ModuleVersion     = '1.2.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -21,13 +21,13 @@
     GUID              = '438d0849-d01b-40d4-a604-811ba5bbc944'
 
     # Author of this module
-    Author            = 'adamr'
+    Author            = 'Adam Driscoll'
 
     # Company or vendor of this module
-    CompanyName       = 'Unknown'
+    CompanyName       = 'Ironman Software'
 
     # Copyright statement for this module
-    Copyright         = '(c) adamr. All rights reserved.'
+    Copyright         = '(c) Ironman Software. All rights reserved.'
 
     # Description of the functionality provided by this module
     # Description = ''
