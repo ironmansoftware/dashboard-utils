@@ -1,3 +1,14 @@
+function New-UDLineBreak {
+    <#
+    .SYNOPSIS
+    Adds a line break to the dashboard.
+    #>
+    New-UDElement -Tag 'div' -Content {
+        New-UDElement -Tag 'br'
+    }
+}
+
+
 function Show-UDEventData {
     <#
     .SYNOPSIS
