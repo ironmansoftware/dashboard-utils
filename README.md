@@ -6,6 +6,10 @@ Utility functions for PowerShell Universal Dashboard
 
 Returns the current values in the `$Cache` scope.
 
+## New-UDLineBreak
+
+Creates a line break (`</br>`) in the dashboard.
+
 ## Reset-UDPage
 
 Reloads the current page.
