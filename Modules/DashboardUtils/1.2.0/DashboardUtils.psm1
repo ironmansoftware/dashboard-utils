@@ -46,7 +46,7 @@ function Show-UDEventData {
     #>
     Show-UDModal -Content {
         New-UDElement -Tag 'pre' -Content {
-            $EventData | ConvertTo-Json
+            ConvertTo-Json -InputObject $EventData
         }
     }
 }
