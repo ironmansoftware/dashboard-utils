@@ -12,7 +12,7 @@
     RootModule        = 'DashboardUtils.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '1.2.0'
+    ModuleVersion     = '1.3.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -30,7 +30,7 @@
     Copyright         = '(c) Ironman Software. All rights reserved.'
 
     # Description of the functionality provided by this module
-    # Description = ''
+    Description       = 'Utilities for PowerShell Universal dashboards.'
 
     # Minimum version of the PowerShell engine required by this module
     # PowerShellVersion = ''
