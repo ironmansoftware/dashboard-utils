@@ -1,3 +1,30 @@
+function New-UDCenter {
+    <#
+    .SYNOPSIS
+    Center items within a dashboard.
+    
+    .DESCRIPTION
+    Center items within a dashboard.
+    
+    .PARAMETER Content
+    The items to center. 
+    
+    .EXAMPLE
+    New-UDCenter -Content {
+        New-UDTypography -Text 'Loading groups' -Variant h5
+        New-UDProgress -Circular
+    }
+    #>
+    param([ScriptBlock]$Content)
+
+    New-UDElement -tag div -Content $Content -Attributes @{
+        style = @{
+            textAlign = 'center'
+            width     = '100%'
+        }
+    }
+}
+
 function New-UDLineBreak {
     <#
     .SYNOPSIS
