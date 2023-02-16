@@ -25,6 +25,42 @@ function New-UDCenter {
     }
 }
 
+function New-UDConfirm {
+    <#
+    .SYNOPSIS
+    Shows a confirm object in a modal, returns either true or false.
+
+    .DESCRIPTION
+    Shows a confirm object in a modal, returns either true or false.
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $false,
+            ValueFromPipeline = $true,
+            ValueFromPipelineByPropertyName = $true)]
+        [string]$Text = 'Are you sure?'
+    )
+    $Session:Result = $null
+    Show-UDModal -Content {
+        New-UDTypography -Text $Text
+    } -Footer {
+        New-UDButton -Text "Yes" -OnClick {
+            $Session:Result = $true
+            Hide-UDModal
+        } -Style @{"border-radius" = "4px" }
+
+        New-UDButton -Text "No" -OnClick {
+            $Session:Result = $false
+            Hide-UDModal
+        } -Style @{"border-radius" = "4px" }
+
+    } -Persistent
+    while($Session:Result -eq $null) {
+        Start-Sleep -Milliseconds 100
+    }
+    return $Session:Result
+}
+
 function New-UDLineBreak {
     <#
     .SYNOPSIS
