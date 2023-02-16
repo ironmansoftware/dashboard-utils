@@ -10,6 +10,10 @@ Returns the current values in the `$Cache` scope.
 
 Center items on a dashboard.
 
+## New-UDConfirm 
+
+Prompts the user a yes\no confirm prompt with a customizable prompt. 
+
 ## New-UDLineBreak
 
 Creates a line break (`</br>`) in the dashboard.
